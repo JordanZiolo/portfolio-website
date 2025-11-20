@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import HtmlProject from "./pages/HtmlProject";
+import CssProject from "./pages/CssProject";
+import JsProject from "./pages/JsProject";
 import "./App.css";
 
 export default function App() {

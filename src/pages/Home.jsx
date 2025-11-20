@@ -4,6 +4,7 @@ import "../App.css"
 
 export default function Home() {
   return (
+    <>
     <section className="home">
       <div className="hero">
         <div className="text-section">
@@ -14,7 +15,8 @@ export default function Home() {
           <img src={jordanImg} alt="Jordan Buchacz" />
         </div>
       </div>
-      <footer className="footer">Jordan Buchacz Portfolio</footer>
     </section>
+          <footer className="footer">Jordan Buchacz Portfolio</footer>
+</>
   );
 }
