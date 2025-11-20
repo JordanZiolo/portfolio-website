@@ -182,7 +182,6 @@ body {
   text-align: center;
 }
 
-/* Titel */
 .about-title {
   background-color: #e6401b;
   display: inline-block;
@@ -194,14 +193,12 @@ body {
   font-weight: bold;
 }
 
-/* 2 Rode boxen naast elkaar */
 .about-content {
   display: flex;
   justify-content: center;
   gap: 200px;
 }
 
-/* Individuele tekstboxen */
 .about-box {
   background-color: #e6401b;
   width: 400px;

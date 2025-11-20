@@ -1,4 +1,4 @@
-
+import htmlImg from "../assets/html.jpg";
 import { Link } from "react-router-dom";
 import "../App.css";
 
