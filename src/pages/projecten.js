@@ -3,23 +3,23 @@ const projecten = [
 
   {
     id: 2,
-    titel: "HTML Opdracht 5.1 & 5.2",
-    periode: "Periode 1 – HTML/CSS",
+    titel: "HTML Opdracht 3.2",
+    periode: "Periode 1 – HTML",
     beschrijving:
-      "Een webpagina gemaakt als een project voor een ouderavond gesprek het begin van het schooljaar, semantische elementen en basis styling. Onderdeel van de HTML/CSS opdrachten.",
-    link: "https://github.com/Abderrezzak-Hamada/P1-HTML-CSS/tree/main/opdracht5.1en5.2/opdracht5.1%20en%205.2/opdracht5.1en5.2",
+      "Een voorbeeld van boekingsformulier die ik heb gemaakt in het begin van mijn schooljaar",
+    link: "https://github.com/JordanZiolo/p1-html-css/blob/main/3.2%20opdracht.html",
     afbeelding: "../images/Html.png",
      afbeelding1: "../images/Html.jpg",
     categorie: "Web"
   },
   {
     id: 3,
-    titel: "CSS Opdracht 6.2",
-    periode: "Periode 1 – CSS Layout",
+    titel: "Project Game",
+    periode: "Periode 3 – CSS ",
     beschrijving:
-      "Een stijlopdracht die wij bij het begin van periode 2 hebben gemaakt waarbij geavanceerdere CSS-technieken zoals layout, flexbox en styling werden toegepast.",
+      "Styling van mijn game die ik moest doen in Periode 3",
     tech: ["CSS"],
-    link: "https://github.com/Abderrezzak-Hamada/P1-HTML-CSS/blob/main/opdracht6.2/style.css",
+    link: "https://github.com/TechniekCollegeRotterdam/project-games-for-good-sod1b-marokko/tree/main/Game-Jordan",
     afbeelding: "../images/css.png",
      afbeelding1: "../images/css.jpg",
     categorie: "CSS"
@@ -29,9 +29,9 @@ const projecten = [
     titel: "JavaScript Game",
     periode: "Periode 2 – JavaScript",
     beschrijving:
-      "Een JavaScript-game oefenproject waarin logica, DOM-manipulatie en interactieve gameplay werden toegepast , deze opdracht was een onderdeel van een project die wij moesten maken in de 3de periode .",
+      "Een blokje die van links naar recht beweegt.",
     tech: ["JavaScript"],
-    link: "https://github.com/Abderrezzak-Hamada/P2-javascript/blob/main/opdracht0/script.js",
+    link: "https://github.com/JordanZiolo/p2-javascript/tree/main/week3/opdracht6",
     afbeelding: "../images/js.png",
      afbeelding1: "../images/Js.jpg",
     categorie: "JavaScript"
