@@ -1,51 +1,18 @@
-export default function Contact() {
+const Contact = () => {
   return (
-    <>
-    <section className="contact">
-      <h1>Contact</h1>
+    <div className="contact-page">
+      
 
-      <form className="contact-form">
-        <div className="form-group">
-          <label htmlFor="name">Naam</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Je naam"
-            required
-          />
-        </div>
 
-        <div className="form-group">
-          <label htmlFor="email">E-mail</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="je@email.com"
-            required
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="message">Bericht</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Typ hier je bericht..."
-            rows="5"
-            required
-          ></textarea>
-        </div>
-
-        <button type="submit" className="send-btn">
-          Versturen
-        </button>
+    
+      <form>
+        <input type="text" name="name" placeholder="Naam" />
+        <input type="email" name="email" placeholder="E-mail" />
+        <textarea name="message" placeholder="Bericht" rows="5"></textarea>
+        <input type="submit" value="Verzenden" />
       </form>
-    </section>
-            <footer className="footer">Jordan Buchacz Portfolio</footer>
-
-   </>
+    </div>
   );
-}
+};
 
+export default Contact;

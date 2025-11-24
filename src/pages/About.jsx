@@ -1,36 +1,34 @@
 import React from "react";
 import "../App.css";
 
-const About = () => {
+
+const OverMij = () => {
   return (
-    <>
-      <main className="about-page">
+    <div className="overmij-container">
+      <div className="overmij-left">
+        <h2 className="overmij-title">Over Mij</h2>
+        
+      </div>
 
-        <h1 className="about-title">Over mij</h1>
+      <div className="overmij-middle">
+        <p>
+         Ik ben Jordan Buchacz, een software developer in opleiding.
+          Ik hou van programmeren en het bouwen van slimme, gebruiksvriendelijke applicaties.
+           Tijdens mijn opleiding leer ik werken met verschillende talen en frameworks om mijn skills te verbeteren.
+        </p>
 
-        <div className="about-content">
-          <div className="about-box">
-            <p>
-              Ik ben Jordan Buchacz, een software developer in opleiding.  
-              Ik hou van programmeren en het bouwen van slimme, gebruiksvriendelijke applicaties.  
-              Tijdens mijn opleiding leer ik werken met verschillende talen en frameworks om mijn skills te verbeteren.
-            </p>
-          </div>
+      
 
-          <div className="about-box">
-            <p>
-              Ik experimenteer graag met nieuwe technologieën en werk aan persoonlijke projecten.  
-              Mijn doel is om als developer software te maken die er goed uitziet én goed presteert.  
-              Leren, groeien en beter worden in wat ik doe — dat motiveert mij elke dag.
-            </p>
-          </div>
-        </div>
+        <p>
+         Ik experimenteer graag met nieuwe technologieën en werk aan persoonlijke projecten.
+          Mijn doel is om als developer software te maken die er goed uitziet én goed presteert.
+          Leren, groeien en beter worden in wat ik doe — dat motiveert mij elke dag.
+        </p>
+      </div>
 
-      </main>
-
-      <footer className="footer">Jordan Buchacz Portfolio</footer>
-    </>
+     
+    </div>
   );
 };
 
-export default About;
+export default OverMij;

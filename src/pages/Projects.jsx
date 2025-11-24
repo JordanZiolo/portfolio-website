@@ -1,38 +1,49 @@
-import htmlImg from "../assets/html.jpg";
-import cssImg from "../assets/css.jpg";
-import jsImg from "../assets/javascript.jpg";
-import { Link } from "react-router-dom";
-import "../App.css";
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import projecten  from "./projecten.js";
 
-export default function Projects() {
+const Projects = () => {
+
+  // maak een usestate genaamd projects, setProjects en laad hier je projecten data in
+  const [projects, setProjects] = useState(projecten);
+
+  const navigate = useNavigate();
+  const goToDetail = (projectId) => {
+    navigate(`/projecten/${projectId}`);
+    console.log(projectId);
+  };
+
+
   return (
-    <>
-      <section className="projects-page">
+    <section className="projecten-section">
+      
+      <div className="projecten-title">projecten</div>
 
-        <h1 className="projects-title">My Projects</h1>
+      <div className="projecten-icons">
 
-        <p className="projects-subtext">Klik op een project om het te openen</p>
+          
+        {projects.map((project, index) => (
+          <div className="project-icon" key={project.id} onClick={() => goToDetail(project.id)}>
+            <div className="php-box">
+              <img 
+                src={project.afbeelding} 
+                alt={project.name}
+                style={{ width: "90px" }} 
+              />
+            </div>
+          </div>
+        ))}
 
-        <div className="projects-grid">
+      </div>
 
-          <Link to="/html-project" className="project-card">
-            <p>HTML Project</p>
-            <img src={htmlImg} alt="HTML Project" />
-          </Link>
-
-          <Link to="/css-project" className="project-card">
-            <p>CSS Project</p>
-            <img src={cssImg} alt="CSS Project" />
-          </Link>
-
-          <Link to="/js-project" className="project-card">
-            <p>JavaScript Project</p>
-            <img src={jsImg} alt="JavaScript Project" />
-          </Link>
-
-        </div>
-      </section>
-            <footer className="footer">Jordan Buchacz Portfolio</footer>     
-    </>
+      <p className="projecten-text">
+        Klik op een van de logo’s om het project te bekijken.
+      </p>
+      
+    </section>
   );
 }
+
+export default Projects
+
+
