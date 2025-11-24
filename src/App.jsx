@@ -9,7 +9,7 @@ import ProjectDetail from './Pages/ProjectDetail';
 
 function App() {
   return (
- <BrowserRouter>
+ <BrowserRouter basename="/portfolio-website/">
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />

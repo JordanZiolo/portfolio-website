@@ -7,8 +7,7 @@ const ProductDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
   const [projecttList, setProjecttList] = useState(projecten);
-  
-  
+
   // Zoek het juiste product
   const project = projecttList.find(p => p.id === Number(projectId));
 
